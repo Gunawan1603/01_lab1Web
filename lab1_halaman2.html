@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tag HTML Dasar</title>
+        </head>
+<!-- menambahkan link navigasi -->
+<nav>
+    <a href="lab1_tag_dasar.html">Dasar HTML</a>
+    <a href="lab1_halaman2.html">Halaman 2</a>
+    <a href="http://www.google.com">Halaman Web Eksternal Google</a>
+    </nav>
+    <hr>
+<head>
+  <title>GUNAWAN - 312010191</title>
+        <link rel="shorcut icon" href="logo-upb.png">
+  <style>
+ 
+div.background {
+    border: 5px solid Red;
+    width:65%;
+    center;
+    border-radius: 20px;
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 2px solid Blue;
+    opacity: 0.8;
+    border-radius: 5px;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: italic;
+    color: #00000;
+	
+  </style>
+    <script type="text/javascript">
+ window.onload = function() { jam(); }
+
+ function jam() {
+  var e = document.getElementById('jam'),
+  d = new Date(), h, m, s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+
+  e.innerHTML = h +':'+ m +':'+ s;
+
+  setTimeout('jam()', 1000);
+ }
+
+ function set(e) {
+  e = e < 10 ? '0'+ e : e;
+  return e;
+ }
+</script>
+</head>
+
+<body background="bg.jpg">
+<br><br><br><br>
+<center>
+<div class="background">
+  <div class="transbox">
+     <table style="width:100%">
+        <tr>
+          <td style="width:20%" align="right"><img src="logo-upb.png" width="120" height="90"></td>
+          <td style="width:90%" align="center"><h2>
+				Pemrograman Web<br>
+				GUNAWAN - 312010191 - TI.20.B.1<br>
+                		Teknik Informatika<br>
+				Universitas Pelita Bangsa</h2></td>
+        </tr>
+      </table>
+
+      <hr><hr>
+
+      <table width="100%">
+          <tr>
+              <td align="center">
+                  <font style="width:50px">Tugas Pemrograman Web Pertemuan 2 <br> 
+                  Teknik Informatika - Universitas Pelita Bangsa<br>
+                    Dosen Pembimbing : Agung Nugroho,S.Kom.,M.Kom.<br>
+                  </font>
+              </td>
+          </tr>
+      	<tr>
+        	<td align="center"><h2>
+                <hr>
+                Link Github Repository - Tugas Pemrograman Web 
+                <table width="60%" align="center">
+                    <tr>
+                        <td>No.</td>
+                        <td>Description</td>
+                        <td>Link</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><b>Tugas Pertemuan 2 => Belajar Dasar HTML </b></td>
+                        <td><a href="https://github.com/Gunawan1603/01_lab1Web" target="_blank" style="text-decoration:none; color:blue"><img src="click-here image.png" width="80px" height="30px"></a></td>
+                    </tr>
+                    </table>
+                </h2>
+            </td>
+        </tr>
+      </table>
+      <table>
+<tr>
+<title>Atribut BGColor di tag Marquee</title>
+</head>
+<body>
+<marquee bgcolor="cyan" width="500">TERIMAKASIH</marquee>
+</table>
+      <table>
+          <tr>
+           <td align="center">
+              <td width="70%" align="right"><p style="font-size: 20px; font-family: veneda;" align="right">Saat ini jam : </p></td>
+              <td width="20%"><p style="font-size: 20px; font-family: veneda;" id="jam"></p></td>
+
+              
+          </tr>
+      </table>
+  </div>
+</div>
+</center>
+</body>
+
+</html>
